@@ -3,7 +3,7 @@ acceptBtn = cookiesBox.querySelector("button");
 
 acceptBtn.onclick = () => {
     //Setting Cookies for 1 month, after 1 month cookies will be expired automatically
-    document.cookie = "CookieBy=CodingJouni; max-age="+60*60*24*30;
+    document.cookie = "CookieBy=CodingJouni; max-age=30 path:/";
     if (document.cookie) {//if the cookies set
         cookiesBox.classList.add("hide");//hide cookies box once cookies set
     }else{
